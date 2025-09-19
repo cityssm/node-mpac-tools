@@ -1,0 +1,35 @@
+{
+  "name": "@cityssm/mpac-tools",
+  "version": "0.1.0",
+  "description": "Lookups and utilities for working with MPAC data.",
+  "keywords": [
+    "mpac",
+    "ontario",
+    "government",
+    "property-assessment",
+    "roll-number"
+  ],
+  "homepage": "https://github.com/cityssm/node-mpac-tools#readme",
+  "bugs": {
+    "url": "https://github.com/cityssm/node-mpac-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/node-mpac-tools.git"
+  },
+  "license": "MIT",
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./rollNumbers": "./rollNumbers/index.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "eslint-config-cityssm": "^29.1.1",
+    "prettier-config-cityssm": "^1.0.0"
+  }
+}
