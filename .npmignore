@@ -4,6 +4,7 @@ test/
 
 .deepsource.toml
 .gitignore
+.markdownlint.json
 .prettierignore
 
 eslint.config.*
