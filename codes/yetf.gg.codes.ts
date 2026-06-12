@@ -9,7 +9,7 @@ export const identifierNames = {
   M: 'Male',
   P: 'Provincial Government including agencies',
   X: 'Corporations, taxable agencies and other non-persons'
-} as const
+} as const satisfies Record<string, string>
 
 export const occupancyStatusNames = {
   B: 'Other residents such as boarders, lodgers, roomers, or children',
@@ -17,7 +17,7 @@ export const occupancyStatusNames = {
   S: 'Spouse of owner or spouse of tenant',
   T: 'Tenant or Joint Tenant',
   V: 'Vacant unit'
-} as const
+} as const satisfies Record<string, string>
 
 export const schoolSupportNames = {
   A: 'French-Public',
@@ -27,14 +27,14 @@ export const schoolSupportNames = {
   N: 'No Support',
   P: 'English-Public',
   S: 'English-Separate'
-} as const
+} as const satisfies Record<string, string>
 
 export const residencyCodeDescriptions = {
   A: 'Individual lives in another apartment or house on the same property',
   M: 'Individual lives elsewhere in the same municipality',
   N: 'Individual lives in another municipality',
   U: 'Individual lives in this unit'
-} as const
+} as const satisfies Record<string, string>
 
 export const monthOfBirthNames = {
   '01': 'January',
@@ -49,4 +49,4 @@ export const monthOfBirthNames = {
   '10': 'October',
   '11': 'November',
   '12': 'December'
-} as const
+} as const satisfies Record<string, string>

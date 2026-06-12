@@ -28,7 +28,7 @@ export const unitClassDescriptions = {
   TPL: 'Oil and gas transmissions pipelines',
   UTC: 'Utility transmission and distribution corridors',
   VL: 'Vacant lands other than farmland, mining land, conservation land, or those of a Conservation Authority. This includes land owned by the Federal Government, Provincial Governments, etc.'
-} as const
+} as const satisfies Record<string, string>
 
 export const realtyTaxClassNames = {
   A: 'Large Theatre',
@@ -55,11 +55,9 @@ export const realtyTaxClassNames = {
   X: 'Commercial (New Construction)',
   Y: 'Office Building (New Construction)',
   Z: 'Shopping Centre (New Construction)'
-} as const
+} as const satisfies Record<string, string>
 
-export const realtyTaxQualifiers: Readonly<
-  Record<string, { class: 'Payment in Lieu' | 'Taxable'; name: string }>
-> = {
+export const realtyTaxQualifiers = {
   1: { class: 'Taxable', name: 'Farmland Awaiting Development Phase I' },
   2: {
     class: 'Payment in Lieu',
@@ -111,7 +109,10 @@ export const realtyTaxQualifiers: Readonly<
   X: { class: 'Taxable', name: 'Vacant Land' },
   Y: { class: 'Payment in Lieu', name: 'Full, Vacant Land' },
   Z: { class: 'Payment in Lieu', name: 'General, Vacant Land' }
-} as const
+} as const satisfies Record<
+  string,
+  { class: 'Payment in Lieu' | 'Taxable'; name: string }
+>
 
 export const unitSupportNames = {
   A: 'French-Public',
@@ -121,7 +122,7 @@ export const unitSupportNames = {
   N: 'No Support',
   P: 'English-Public',
   S: 'English-Separate'
-} as const
+} as const satisfies Record<string, string>
 
 export const propertyTypeNames = {
   '0': 'Rights-of-Way',
@@ -134,4 +135,4 @@ export const propertyTypeNames = {
   '7': 'Recreational',
   '8': 'Residential Condos',
   '9': 'Other/Unique Properties'
-} as const
+} as const satisfies Record<string, string>

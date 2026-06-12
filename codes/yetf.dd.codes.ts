@@ -9,11 +9,9 @@ export const textureCodeNames = {
   '7': 'Organic',
   '8': 'Water',
   '9': 'Rock'
-} as const
+} as const satisfies Record<string, string>
 
-export const soilClassPointsRemaining: Readonly<
-  Record<'1' | '2' | '3' | '4' | '5' | '6' | '8', { max: number; min: number }>
-> = {
+export const soilClassPointsRemaining = {
   '1': {
     max: 95,
     min: 85
@@ -42,4 +40,7 @@ export const soilClassPointsRemaining: Readonly<
     max: 0,
     min: 0
   }
-} as const
+} as const satisfies Record<
+  '1' | '2' | '3' | '4' | '5' | '6' | '8',
+  { max: number; min: number }
+>

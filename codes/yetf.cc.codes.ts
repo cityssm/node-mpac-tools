@@ -1,17 +1,6 @@
 /* eslint-disable @cspell/spellchecker */
 
-export const characterOfConstructionDescriptions: Readonly<
-  Record<
-    string,
-    {
-      description?: string
-      floor?: string
-      framing?: string
-      roof?: string
-      walls?: string
-    }
-  >
-> = {
+export const characterOfConstructionDescriptions = {
   A: {
     floor: 'Concrete or concrete covered steel deck, fireproofed',
     framing:
@@ -51,7 +40,16 @@ export const characterOfConstructionDescriptions: Readonly<
   'N/A': {
     description: 'Not applicable'
   }
-} as const
+} as const satisfies Record<
+  string,
+  {
+    description?: string
+    floor?: string
+    framing?: string
+    roof?: string
+    walls?: string
+  }
+>
 
 export const yearBuiltCodeNames = {
   A: 'Addition',
@@ -62,30 +60,28 @@ export const yearBuiltCodeNames = {
   M: 'Estimated, Renovated and Addition',
   N: 'None of the above codes are applicable',
   R: 'Renovated'
-} as const
+} as const satisfies Record<string, string>
 
-export const conditionCodes: Readonly<
-  Record<string, { name: string; ranking: number }>
-> = {
+export const conditionCodes = {
   A: { name: 'Average', ranking: 3 },
   E: { name: 'Excellent', ranking: 5 },
   F: { name: 'Fair', ranking: 2 },
   G: { name: 'Good', ranking: 4 },
   P: { name: 'Poor', ranking: 1 }
-} as const
+} as const satisfies Record<string, { name: string; ranking: number }>
 
 export const partStoreyCodeNames = {
   '1': '1/4 storey',
   '2': '1/2 storey',
   '3': '3/4 storey'
-}
+} as const satisfies Record<string, string>
 
 export const splitCodeNames = {
   B: 'Back or Front Split',
   N: 'No Split',
   S: 'Side Split',
   Y: 'Yes (unconventional split style)'
-} as const
+} as const satisfies Record<string, string>
 
 export const basementFinishCodeNames = {
   '2': 'Recreation',
@@ -93,7 +89,7 @@ export const basementFinishCodeNames = {
   '8': 'Apartment',
   A: 'Apartment',
   R: 'Recreation'
-} as const
+} as const satisfies Record<string, string>
 
 export const heatingTypeCodeNames = {
   AS: 'Airtight Stove',
@@ -108,7 +104,7 @@ export const heatingTypeCodeNames = {
   PL: 'Pipeless Hot Air',
   RD: 'Radiant Electric',
   ST: 'Conventional Heating Stove'
-} as const
+} as const satisfies Record<string, string>
 
 export const garageTypeCodeNames = {
   A: 'Attached',
@@ -120,7 +116,7 @@ export const garageTypeCodeNames = {
   N: 'No parking or No garage',
   O: 'Outdoor',
   P: 'Parking'
-} as const
+} as const satisfies Record<string, string>
 
 export const structureCodeClasses = {
   100: 'Secondary',
@@ -130,7 +126,7 @@ export const structureCodeClasses = {
   500: 'Industrial',
   600: 'Institutional',
   700: 'Special Purpose'
-} as const
+} as const satisfies Record<string, string>
 
 export const structureCodeNames = {
   '101': 'Detached Garage',
@@ -355,4 +351,4 @@ export const structureCodeNames = {
   '780': 'Grandstand/Stadium',
   '790': 'Exhibit Building/Museum/Gallery',
   '799': 'Unspecified Special Purpose Structure'
-}
+} as const satisfies Record<string, string>

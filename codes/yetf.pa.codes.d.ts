@@ -55,10 +55,128 @@ export declare const realtyTaxClassNames: {
     readonly Y: "Office Building (New Construction)";
     readonly Z: "Shopping Centre (New Construction)";
 };
-export declare const realtyTaxQualifiers: Readonly<Record<string, {
-    class: 'Payment in Lieu' | 'Taxable';
-    name: string;
-}>>;
+export declare const realtyTaxQualifiers: {
+    readonly 1: {
+        readonly class: "Taxable";
+        readonly name: "Farmland Awaiting Development Phase I";
+    };
+    readonly 2: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Farmland Awaiting Development Phase I";
+    };
+    readonly 3: {
+        readonly class: "Payment in Lieu";
+        readonly name: "General, Farmland Awaiting Development Phase I";
+    };
+    readonly 4: {
+        readonly class: "Taxable";
+        readonly name: "Farmland Awaiting Development Phase II";
+    };
+    readonly 5: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Farmland Awaiting Development Phase II";
+    };
+    readonly 6: {
+        readonly class: "Payment in Lieu";
+        readonly name: "General, Farmland Awaiting Development Phase II";
+    };
+    readonly A: {
+        readonly class: "Taxable";
+        readonly name: "Excess/Vacant Land, Education Only";
+    };
+    readonly B: {
+        readonly class: "Taxable";
+        readonly name: "Lower-tier Only";
+    };
+    readonly C: {
+        readonly class: "Taxable";
+        readonly name: "Lower-tier and Education Only";
+    };
+    readonly D: {
+        readonly class: "Taxable";
+        readonly name: "Education Only";
+    };
+    readonly F: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full";
+    };
+    readonly G: {
+        readonly class: "Payment in Lieu";
+        readonly name: "General";
+    };
+    readonly H: {
+        readonly class: "Taxable";
+        readonly name: "Full, Shared Payment in Lieu";
+    };
+    readonly I: {
+        readonly class: "Taxable";
+        readonly name: "Water Intake System, Shared Payment in Lieu";
+    };
+    readonly J: {
+        readonly class: "Taxable";
+        readonly name: "Vacant Land, Shared Payment in Lieu";
+    };
+    readonly K: {
+        readonly class: "Taxable";
+        readonly name: "Excess Land, Shared Payment in Lieu";
+    };
+    readonly L: {
+        readonly class: "Taxable";
+        readonly name: "Upper-tier and Education Only";
+    };
+    readonly M: {
+        readonly class: "Taxable";
+        readonly name: "General";
+    };
+    readonly N: {
+        readonly class: "Taxable";
+        readonly name: "Non-Generating Station, Shared Payment in Lieu";
+    };
+    readonly P: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Taxable Tenant of Province";
+    };
+    readonly Q: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Excess Land, Taxable Tenant of Province";
+    };
+    readonly R: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Vacant Land, Taxable Tenant of Province";
+    };
+    readonly S: {
+        readonly class: "Taxable";
+        readonly name: "Generating Station, Shared Payment in Lieu";
+    };
+    readonly T: {
+        readonly class: "Taxable";
+        readonly name: "Full";
+    };
+    readonly U: {
+        readonly class: "Taxable";
+        readonly name: "Excess Land";
+    };
+    readonly V: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Excess Land";
+    };
+    readonly W: {
+        readonly class: "Payment in Lieu";
+        readonly name: "General, Excess Land";
+    };
+    readonly X: {
+        readonly class: "Taxable";
+        readonly name: "Vacant Land";
+    };
+    readonly Y: {
+        readonly class: "Payment in Lieu";
+        readonly name: "Full, Vacant Land";
+    };
+    readonly Z: {
+        readonly class: "Payment in Lieu";
+        readonly name: "General, Vacant Land";
+    };
+};
 export declare const unitSupportNames: {
     readonly A: "French-Public";
     readonly B: "Split";
