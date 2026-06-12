@@ -1,4 +1,7 @@
+// eslint-disable-next-line @eslint-community/eslint-comments/disable-enable-pair
+/* eslint-disable @cspell/spellchecker, max-lines, sonarjs/no-duplicate-string */
 export const rollNumberMunicipalities = Object.freeze({
+    // Prescott, Russell, Stormont Dundas & Glengarry Counties
     '0101': 'South Glengarry Township',
     '0111': 'North Glengarry Township',
     '0201': 'East Hawkesbury Township',
@@ -14,6 +17,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '0411': 'North Stormont Township',
     '0506': 'South Dundas Township',
     '0511': 'North Dundas Township',
+    // Lanark, Leeds & Grenville Counties
     '0701': 'Edwardsburgh/Cardinal Township',
     '0706': 'Augusta Township',
     '0708': 'Prescott Town',
@@ -36,7 +40,9 @@ export const rollNumberMunicipalities = Object.freeze({
     '0928': 'Carleton Place Town',
     '0931': 'Mississippi Mills Town',
     '0940': 'Lanark Highlands Township',
+    // Regional Municipality of the City of Ottawa
     '0614': 'Ottawa City',
+    // Renfrew County
     '4701': 'Mcnab/Braeside Township',
     '4702': 'Arnprior Town',
     '4706': 'Greater Madawaska Township',
@@ -55,6 +61,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '4792': 'Laurentian Hills Town',
     '4796': 'Deep River Town',
     '4798': 'Head Clara Maria Township',
+    // Frontenac, Lennox & Addington Counties
     '1001': 'Frontenac Islands Township',
     '1011': 'Corporation Of The City Of Kingston',
     '1029': 'South Frontenac Township',
@@ -64,6 +71,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '1121': 'Greater Napanee Town',
     '1124': 'Stone Mills Township',
     '1134': 'Addington Highlands Township',
+    // Hastings, Northumberland, City of Prince Edward Counties
     '1201': 'Tyendinaga Township',
     '1202': 'Deseronto Town',
     '1204': 'Quinte West City',
@@ -88,6 +96,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '1423': 'Port Hope Municipality',
     '1435': 'Trent Hills Municipality',
     '1450': 'Alnwick/Haldimand Township',
+    // Peterborough County, Kawartha Lakes County, Haliburton County
     '1501': 'Asphodel-norwood Township',
     '1506': 'Otonabee-south Monaghan Township',
     '1509': 'Cavan Monaghan Township',
@@ -102,7 +111,9 @@ export const rollNumberMunicipalities = Object.freeze({
     '4616': 'Minden Hills Township',
     '4621': 'Algonquin Highlands Township',
     '4624': 'Dysart Et Al Municipality',
+    // City of Toronto
     '1900': 'City Of Toronto',
+    // Regional Municipality of Durham
     '1801': 'Pickering City',
     '1805': 'Ajax Town',
     '1809': 'Whitby Town',
@@ -111,6 +122,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '1820': 'Scugog Township',
     '1829': 'Uxbridge Township',
     '1839': 'Brock Township',
+    // Regional Municipality of York
     '1928': 'Vaughan City',
     '1936': 'Markham City',
     '1938': 'Richmond Hill Town',
@@ -120,6 +132,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '1949': 'King Township',
     '1954': 'East Gwillimbury Town',
     '1970': 'Georgina Town',
+    // Regional Municipalities of Halton and Peel
     '2105': 'Mississauga City',
     '2110': 'Brampton City',
     '2124': 'Caledon Town',
@@ -127,6 +140,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '2402': 'Burlington City',
     '2409': 'Milton Town',
     '2415': 'Halton Hills Town',
+    // Simcoe County
     '4301': 'Adjala-tosorontio Township',
     '4312': 'Bradford West Gwillimbury Town',
     '4316': 'Innisfil Town',
@@ -145,12 +159,14 @@ export const rollNumberMunicipalities = Object.freeze({
     '4368': 'Tiny Township',
     '4372': 'Penetanguishene Town',
     '4374': 'Midland Town',
+    // District Municipality of Muskoka
     '4402': 'Gravenhurst Town',
     '4418': 'Bracebridge Town',
     '4427': 'Lake Of Bays Township',
     '4442': 'Huntsville Town',
     '4453': 'Muskoka Lakes Township',
     '4465': 'Georgian Bay Township',
+    // Regional Municipality of Niagara
     '2602': 'West Lincoln Township',
     '2615': 'Grimsby Town',
     '2622': 'Lincoln Town',
@@ -163,11 +179,14 @@ export const rollNumberMunicipalities = Object.freeze({
     '2725': 'Niagara Falls City',
     '2731': 'Thorold City',
     '2732': 'Pelham Town',
+    // Regional Municipality of Hamilton
     '2518': 'Hamilton City',
+    // City of Brantford, Brant, Haldimand County and Norfolk Counties
     '2810': 'Haldimand County',
     '2906': 'Brantford City',
     '2920': 'County Of Brant',
     '3310': 'Norfolk County',
+    // Regional Municipality of Waterloo, the Counties of Dufferin and Wellington, and the City of Guelph
     '2201': 'East Garafraxa Township',
     '2204': 'Grand Valley Town',
     '2208': 'Amaranth Township',
@@ -191,6 +210,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '3018': 'Wilmot Township',
     '3024': 'Wellesley Township',
     '3029': 'Woolwich Township',
+    // Elgin, Middlesex and Oxford Counties
     '3202': 'Norwich Township',
     '3204': 'Tillsonburg Town',
     '3211': 'South-west Oxford Township',
@@ -216,6 +236,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '3946': 'Adelaide Metcalfe Township',
     '3954': 'North Middlesex Municipality',
     '3958': 'Lucan Biddulph Township',
+    // Huron and Perth Counties
     '3110': 'Perth East Township',
     '3111': 'Stratford City',
     '3116': 'St Marys Town',
@@ -231,6 +252,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '4050': 'North Huron Township',
     '4060': 'Morris-turnberry Municipality',
     '4070': 'Ashfield-colborne-wawanosh Township',
+    // Bruce and Grey Counties
     '4102': 'South Bruce Peninsula Town',
     '4103': 'Arran-elderslie Municipality',
     '4104': 'Brockton Municipality',
@@ -248,6 +270,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '4229': 'Hanover Town',
     '4242': 'Blue Mountains Town',
     '4259': 'Owen Sound City',
+    // Municipality of Chatham-Kent, Lambton County
     '3650': 'Chatham-kent Municipality',
     '3805': 'St Clair Township',
     '3806': 'Dawn-euphemia Township',
@@ -260,6 +283,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '3835': 'Plympton-wyoming Town',
     '3841': 'Warwick Township',
     '3845': 'Lambton Shores Municipality',
+    // Essex County
     '3701': 'Peele Township',
     '3706': 'Leamington Municipality',
     '3711': 'Kingsville Town',
@@ -269,6 +293,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '3744': 'Tecumseh Town',
     '3751': 'Lakeshore Town',
     '3754': 'Essex Town',
+    // Territorial Districts of Nipissing and Parry Sound
     '4801': 'South Algonquin Township',
     '4803': 'Province Of Ontario',
     '4816': 'Papineau-cameron Township',
@@ -307,6 +332,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '4995': 'Province Of Ontario',
     '4998': 'Province Of Ontario',
     '4999': 'Province Of Ontario',
+    // Territorial Districts of Cochrane and Timiskaming
     '5401': 'Coleman Township',
     '5406': 'Latchford Town',
     '5408': 'Cobalt Town',
@@ -351,6 +377,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '5676': 'Hearst Town',
     '5677': 'Mattice-val Cote Township',
     '5699': 'Province Of Ontario',
+    // Regional Municipality of Sudbury and the Territorial Districts of Sudbury and Manitoulin
     '5101': 'Tehkummah Township',
     '5102': 'Province Of Ontario',
     '5104': 'Central Manitoulin Municipality',
@@ -379,6 +406,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '5298': 'Province Of Ontario',
     '5299': 'Province Of Ontario',
     '5307': 'Greater Sudbury City',
+    // Territorial District of Algoma
     '5701': 'Jocelyn Township',
     '5704': 'Hilton Township',
     '5706': 'Hilton Beach Village',
@@ -403,6 +431,7 @@ export const rollNumberMunicipalities = Object.freeze({
     '5791': 'White River Township',
     '5796': 'Hornepayne Township',
     '5799': 'Province Of Ontario',
+    // Territorials District of Kenora, Rainy River and Thunder Bay
     '5801': 'Neebing Municipality',
     '5803': 'Province Of Ontario',
     '5804': 'Thunder Bay City',

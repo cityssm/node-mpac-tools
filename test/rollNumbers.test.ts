@@ -58,11 +58,10 @@ await describe('mpac-tools/rollNumbers/utilities', async () => {
       assert.strictEqual(parsed.parcelSub, '01')
       assert.strictEqual(parsed.primarySubordinate, '2345')
     })
+
     await it('should parse valid 19-digit roll numbers', () => {
       const rollNumber = '5761123456789012345' // Sault Ste. Marie code
       const parsed = rollNumbers.parseRollNumber(rollNumber)
-
-      console.log(parsed)
 
       assert.strictEqual(parsed.county, '57')
       assert.strictEqual(parsed.municipality, '61')

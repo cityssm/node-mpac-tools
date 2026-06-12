@@ -1,9 +1,20 @@
+/* eslint-disable @typescript-eslint/no-magic-numbers */
 import { rollNumberMunicipalities } from './lookups.js';
+/**
+ * Validates a roll number.
+ * @param rollNumber - The roll number to validate
+ * @returns True if the roll number is valid, false otherwise
+ */
 export function validateRollNumber(rollNumber) {
     return (/^\d{15}$/.test(rollNumber) ||
         (/^\d{19}$/.test(rollNumber) &&
             Object.keys(rollNumberMunicipalities).includes(rollNumber.slice(0, 4))));
 }
+/**
+ * Parses a roll number into its component parts.
+ * @param rollNumber - The roll number to parse
+ * @returns An object containing the parsed roll number components
+ */
 export function parseRollNumber(rollNumber) {
     if (!validateRollNumber(rollNumber)) {
         throw new Error(`Invalid roll number: ${rollNumber}`);

@@ -25,8 +25,8 @@ await describe('mpac-tools/rollNumbers/utilities', async () => {
             }
         });
         await it('should validate 19-digit roll numbers with valid municipality codes', () => {
-            const validRollNumber = '5761000000000000000';
-            const invalidRollNumber = '9999000000000000000';
+            const validRollNumber = '5761000000000000000'; // Sault Ste. Marie code
+            const invalidRollNumber = '9999000000000000000'; // Not a valid municipality code
             if (!rollNumbers.validateRollNumber(validRollNumber)) {
                 assert.fail(`Valid roll number marked as invalid: ${validRollNumber}`);
             }
@@ -49,9 +49,8 @@ await describe('mpac-tools/rollNumbers/utilities', async () => {
             assert.strictEqual(parsed.primarySubordinate, '2345');
         });
         await it('should parse valid 19-digit roll numbers', () => {
-            const rollNumber = '5761123456789012345';
+            const rollNumber = '5761123456789012345'; // Sault Ste. Marie code
             const parsed = rollNumbers.parseRollNumber(rollNumber);
-            console.log(parsed);
             assert.strictEqual(parsed.county, '57');
             assert.strictEqual(parsed.municipality, '61');
             assert.strictEqual(parsed.mapArea, '12');
@@ -63,6 +62,7 @@ await describe('mpac-tools/rollNumbers/utilities', async () => {
         });
         await it('should throw an error for invalid roll numbers', () => {
             const invalidRollNumber = '12345';
+            // eslint-disable-next-line max-nested-callbacks
             assert.throws(() => {
                 rollNumbers.parseRollNumber(invalidRollNumber);
             }, /Invalid roll number/);
