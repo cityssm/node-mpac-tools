@@ -1,17 +1,17 @@
 /* eslint-disable @cspell/spellchecker */
 
-export const propertyCodeClasses = {
-  100: 'Land',
-  200: 'Farm',
-  300: 'Residential',
-  400: 'Commercial',
-  500: 'Industrial',
-  600: 'Institutional',
-  700: 'Special Purpose',
-  800: 'Government'
-} as const satisfies Record<string, string>
+export const propertyCodeClassNames = Object.freeze({
+  '100': 'Land',
+  '200': 'Farm',
+  '300': 'Residential',
+  '400': 'Commercial',
+  '500': 'Industrial',
+  '600': 'Institutional',
+  '700': 'Special Purpose',
+  '800': 'Government'
+} as const) satisfies Record<`${number}`, string>
 
-export const propertyCodeNames = {
+export const propertyCodeNames = Object.freeze({
   '100': 'Vacant residential land not on water',
   '101': 'Second tier vacant lot',
   '102': 'Conservation Authority land',
@@ -329,9 +329,9 @@ export const propertyCodeNames = {
   '832': 'Government - historic site or monument',
   '840': 'Port authority - port activities',
   '842': 'Port authority - other activities'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<`${number}`, string>
 
-export const serviceCodeNames = {
+export const serviceCodeNames = Object.freeze({
   A: 'All Services',
   H: 'Hydro Access',
   M: 'Municipal Water',
@@ -342,9 +342,9 @@ export const serviceCodeNames = {
   W: 'Well Water',
   X: 'No Water',
   Y: 'No Water Disposal'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const accessCodeNames = {
+export const accessCodeNames = Object.freeze({
   I: 'Island Access',
   L: 'Land Locked',
   N: 'No Road Access',
@@ -353,4 +353,4 @@ export const accessCodeNames = {
   S: 'Summer or Seasonal Access Only',
   W: 'Water Access Only',
   Y: 'Year Round Access by Road'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>

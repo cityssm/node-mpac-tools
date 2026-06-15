@@ -1,14 +1,14 @@
-export declare const propertyCodeClasses: {
-    readonly 100: "Land";
-    readonly 200: "Farm";
-    readonly 300: "Residential";
-    readonly 400: "Commercial";
-    readonly 500: "Industrial";
-    readonly 600: "Institutional";
-    readonly 700: "Special Purpose";
-    readonly 800: "Government";
-};
-export declare const propertyCodeNames: {
+export declare const propertyCodeClassNames: Readonly<{
+    readonly '100': "Land";
+    readonly '200': "Farm";
+    readonly '300': "Residential";
+    readonly '400': "Commercial";
+    readonly '500': "Industrial";
+    readonly '600': "Institutional";
+    readonly '700': "Special Purpose";
+    readonly '800': "Government";
+}>;
+export declare const propertyCodeNames: Readonly<{
     readonly '100': "Vacant residential land not on water";
     readonly '101': "Second tier vacant lot";
     readonly '102': "Conservation Authority land";
@@ -315,8 +315,8 @@ export declare const propertyCodeNames: {
     readonly '832': "Government - historic site or monument";
     readonly '840': "Port authority - port activities";
     readonly '842': "Port authority - other activities";
-};
-export declare const serviceCodeNames: {
+}>;
+export declare const serviceCodeNames: Readonly<{
     readonly A: "All Services";
     readonly H: "Hydro Access";
     readonly M: "Municipal Water";
@@ -327,8 +327,8 @@ export declare const serviceCodeNames: {
     readonly W: "Well Water";
     readonly X: "No Water";
     readonly Y: "No Water Disposal";
-};
-export declare const accessCodeNames: {
+}>;
+export declare const accessCodeNames: Readonly<{
     readonly I: "Island Access";
     readonly L: "Land Locked";
     readonly N: "No Road Access";
@@ -337,4 +337,4 @@ export declare const accessCodeNames: {
     readonly S: "Summer or Seasonal Access Only";
     readonly W: "Water Access Only";
     readonly Y: "Year Round Access by Road";
-};
+}>;

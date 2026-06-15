@@ -6,7 +6,7 @@ import * as codes from '../codes/index.js'
 await describe('mpac-tools/codes', async () => {
   await it('should have valid lookup data', () => {
     // YETF BB
-    assert.strictEqual(codes.propertyCodeClasses[100], 'Land')
+    assert.strictEqual(codes.propertyCodeClassNames['100'], 'Land')
 
     // YETF CC
     assert.strictEqual(codes.yearBuiltCodeNames.A, 'Addition')
@@ -19,6 +19,5 @@ await describe('mpac-tools/codes', async () => {
 
     // YETF PA
     assert.strictEqual(codes.realtyTaxClassNames.F, 'Farm')
-
   })
 })
