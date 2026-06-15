@@ -6,8 +6,8 @@ import { rollNumberMunicipalities } from './lookups.js';
  * @returns True if the roll number is valid, false otherwise
  */
 export function validateRollNumber(rollNumber) {
-    return (/^\d{15}$/.test(rollNumber) ||
-        (/^\d{19}$/.test(rollNumber) &&
+    return (/^\d{15}$/v.test(rollNumber) ||
+        (/^\d{19}$/v.test(rollNumber) &&
             Object.keys(rollNumberMunicipalities).includes(rollNumber.slice(0, 4))));
 }
 /**

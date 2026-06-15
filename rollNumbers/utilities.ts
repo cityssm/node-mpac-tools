@@ -9,8 +9,8 @@ import { rollNumberMunicipalities } from './lookups.js'
  */
 export function validateRollNumber(rollNumber: string): boolean {
   return (
-    /^\d{15}$/.test(rollNumber) ||
-    (/^\d{19}$/.test(rollNumber) &&
+    /^\d{15}$/v.test(rollNumber) ||
+    (/^\d{19}$/v.test(rollNumber) &&
       Object.keys(rollNumberMunicipalities).includes(rollNumber.slice(0, 4)))
   )
 }
@@ -18,11 +18,14 @@ export function validateRollNumber(rollNumber: string): boolean {
 export interface ParsedRollNumber {
   county?: string
   municipality?: string
+
   mapArea: string
   mapDivision: string
   mapSubdivision: string
+
   parcel: string
   parcelSub: string
+
   primarySubordinate: string
 }
 
