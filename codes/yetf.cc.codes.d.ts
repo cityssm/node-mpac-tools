@@ -1,4 +1,4 @@
-export declare const characterOfConstructionDescriptions: {
+export declare const characterOfConstructionDescriptions: Readonly<{
     readonly A: {
         readonly floor: "Concrete or concrete covered steel deck, fireproofed";
         readonly framing: "Structural steel columns and beams fireproofed with masonry, concrete, plaster or other incombustible material";
@@ -32,8 +32,8 @@ export declare const characterOfConstructionDescriptions: {
     readonly 'N/A': {
         readonly description: "Not applicable";
     };
-};
-export declare const yearBuiltCodeNames: {
+}>;
+export declare const yearBuiltCodeNames: Readonly<{
     readonly A: "Addition";
     readonly B: "Both Estimated and Renovated";
     readonly C: "Both Estimated and Addition";
@@ -42,8 +42,8 @@ export declare const yearBuiltCodeNames: {
     readonly M: "Estimated, Renovated and Addition";
     readonly N: "None of the above codes are applicable";
     readonly R: "Renovated";
-};
-export declare const conditionCodes: {
+}>;
+export declare const conditionCodes: Readonly<{
     readonly A: {
         readonly name: "Average";
         readonly ranking: 3;
@@ -64,26 +64,26 @@ export declare const conditionCodes: {
         readonly name: "Poor";
         readonly ranking: 1;
     };
-};
-export declare const partStoreyCodeNames: {
+}>;
+export declare const partStoreyCodeNames: Readonly<{
     readonly '1': "1/4 storey";
     readonly '2': "1/2 storey";
     readonly '3': "3/4 storey";
-};
-export declare const splitCodeNames: {
+}>;
+export declare const splitCodeNames: Readonly<{
     readonly B: "Back or Front Split";
     readonly N: "No Split";
     readonly S: "Side Split";
     readonly Y: "Yes (unconventional split style)";
-};
-export declare const basementFinishCodeNames: {
+}>;
+export declare const basementFinishCodeNames: Readonly<{
     readonly '2': "Recreation";
     readonly '5': "Finished";
     readonly '8': "Apartment";
     readonly A: "Apartment";
     readonly R: "Recreation";
-};
-export declare const heatingTypeCodeNames: {
+}>;
+export declare const heatingTypeCodeNames: Readonly<{
     readonly AS: "Airtight Stove";
     readonly EL: "Electric Heating";
     readonly FA: "Forced Air";
@@ -96,8 +96,8 @@ export declare const heatingTypeCodeNames: {
     readonly PL: "Pipeless Hot Air";
     readonly RD: "Radiant Electric";
     readonly ST: "Conventional Heating Stove";
-};
-export declare const garageTypeCodeNames: {
+}>;
+export declare const garageTypeCodeNames: Readonly<{
     readonly A: "Attached";
     readonly B: "Basement or Built-in";
     readonly C: "Carport";
@@ -107,17 +107,17 @@ export declare const garageTypeCodeNames: {
     readonly N: "No parking or No garage";
     readonly O: "Outdoor";
     readonly P: "Parking";
-};
-export declare const structureCodeClasses: {
-    readonly 100: "Secondary";
-    readonly 200: "Farm";
-    readonly 300: "Residential";
-    readonly 400: "Commercial";
-    readonly 500: "Industrial";
-    readonly 600: "Institutional";
-    readonly 700: "Special Purpose";
-};
-export declare const structureCodeNames: {
+}>;
+export declare const structureCodeClasses: Readonly<{
+    readonly '100': "Secondary";
+    readonly '200': "Farm";
+    readonly '300': "Residential";
+    readonly '400': "Commercial";
+    readonly '500': "Industrial";
+    readonly '600': "Institutional";
+    readonly '700': "Special Purpose";
+}>;
+export declare const structureCodeNames: Readonly<{
     readonly '101': "Detached Garage";
     readonly '102': "Shed";
     readonly '103': "Greenhouse";
@@ -340,4 +340,4 @@ export declare const structureCodeNames: {
     readonly '780': "Grandstand/Stadium";
     readonly '790': "Exhibit Building/Museum/Gallery";
     readonly '799': "Unspecified Special Purpose Structure";
-};
+}>;

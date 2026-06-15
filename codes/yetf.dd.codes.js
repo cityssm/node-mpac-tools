@@ -1,4 +1,4 @@
-export const textureCodeNames = {
+export const textureCodeNames = Object.freeze({
     '0': 'Non-farm land',
     '1': 'Sand',
     '2': 'Sandy loam',
@@ -9,8 +9,8 @@ export const textureCodeNames = {
     '7': 'Organic',
     '8': 'Water',
     '9': 'Rock'
-};
-export const soilClassPointsRemaining = {
+});
+export const soilClassPointsRemaining = Object.freeze({
     '1': {
         max: 95,
         min: 85
@@ -39,4 +39,4 @@ export const soilClassPointsRemaining = {
         max: 0,
         min: 0
     }
-};
+});

@@ -1,4 +1,4 @@
-export declare const identifierNames: {
+export declare const identifierNames: Readonly<{
     readonly C: "Conservation Authority";
     readonly E: "Education, religious or other exempt agencies";
     readonly F: "Female";
@@ -9,15 +9,15 @@ export declare const identifierNames: {
     readonly M: "Male";
     readonly P: "Provincial Government including agencies";
     readonly X: "Corporations, taxable agencies and other non-persons";
-};
-export declare const occupancyStatusNames: {
+}>;
+export declare const occupancyStatusNames: Readonly<{
     readonly B: "Other residents such as boarders, lodgers, roomers, or children";
     readonly O: "Owner or Joint Owner";
     readonly S: "Spouse of owner or spouse of tenant";
     readonly T: "Tenant or Joint Tenant";
     readonly V: "Vacant unit";
-};
-export declare const schoolSupportNames: {
+}>;
+export declare const schoolSupportNames: Readonly<{
     readonly A: "French-Public";
     readonly B: "Split";
     readonly C: "French-Separate";
@@ -25,14 +25,14 @@ export declare const schoolSupportNames: {
     readonly N: "No Support";
     readonly P: "English-Public";
     readonly S: "English-Separate";
-};
-export declare const residencyCodeDescriptions: {
+}>;
+export declare const residencyCodeDescriptions: Readonly<{
     readonly A: "Individual lives in another apartment or house on the same property";
     readonly M: "Individual lives elsewhere in the same municipality";
     readonly N: "Individual lives in another municipality";
     readonly U: "Individual lives in this unit";
-};
-export declare const monthOfBirthNames: {
+}>;
+export declare const monthOfBirthNames: Readonly<{
     readonly '01': "January";
     readonly '02': "February";
     readonly '03': "March";
@@ -45,4 +45,4 @@ export declare const monthOfBirthNames: {
     readonly '10': "October";
     readonly '11': "November";
     readonly '12': "December";
-};
+}>;

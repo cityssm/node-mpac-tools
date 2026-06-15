@@ -1,4 +1,4 @@
-export declare const unitClassDescriptions: {
+export declare const unitClassDescriptions: Readonly<{
     readonly CA: "Property vested in a Conservation Authority";
     readonly CL: "Conservation Land";
     readonly COM: "Commercial property used for business and subject to business assessment";
@@ -28,8 +28,8 @@ export declare const unitClassDescriptions: {
     readonly TPL: "Oil and gas transmissions pipelines";
     readonly UTC: "Utility transmission and distribution corridors";
     readonly VL: "Vacant lands other than farmland, mining land, conservation land, or those of a Conservation Authority. This includes land owned by the Federal Government, Provincial Governments, etc.";
-};
-export declare const realtyTaxClassNames: {
+}>;
+export declare const realtyTaxClassNames: Readonly<{
     readonly A: "Large Theatre";
     readonly C: "Commercial";
     readonly D: "Office Building";
@@ -54,29 +54,29 @@ export declare const realtyTaxClassNames: {
     readonly X: "Commercial (New Construction)";
     readonly Y: "Office Building (New Construction)";
     readonly Z: "Shopping Centre (New Construction)";
-};
-export declare const realtyTaxQualifiers: {
-    readonly 1: {
+}>;
+export declare const realtyTaxQualifiers: Readonly<{
+    readonly '1': {
         readonly class: "Taxable";
         readonly name: "Farmland Awaiting Development Phase I";
     };
-    readonly 2: {
+    readonly '2': {
         readonly class: "Payment in Lieu";
         readonly name: "Full, Farmland Awaiting Development Phase I";
     };
-    readonly 3: {
+    readonly '3': {
         readonly class: "Payment in Lieu";
         readonly name: "General, Farmland Awaiting Development Phase I";
     };
-    readonly 4: {
+    readonly '4': {
         readonly class: "Taxable";
         readonly name: "Farmland Awaiting Development Phase II";
     };
-    readonly 5: {
+    readonly '5': {
         readonly class: "Payment in Lieu";
         readonly name: "Full, Farmland Awaiting Development Phase II";
     };
-    readonly 6: {
+    readonly '6': {
         readonly class: "Payment in Lieu";
         readonly name: "General, Farmland Awaiting Development Phase II";
     };
@@ -176,8 +176,8 @@ export declare const realtyTaxQualifiers: {
         readonly class: "Payment in Lieu";
         readonly name: "General, Vacant Land";
     };
-};
-export declare const unitSupportNames: {
+}>;
+export declare const unitSupportNames: Readonly<{
     readonly A: "French-Public";
     readonly B: "Split";
     readonly C: "French-Separate";
@@ -185,8 +185,8 @@ export declare const unitSupportNames: {
     readonly N: "No Support";
     readonly P: "English-Public";
     readonly S: "English-Separate";
-};
-export declare const propertyTypeNames: {
+}>;
+export declare const propertyTypeNames: Readonly<{
     readonly '0': "Rights-of-Way";
     readonly '1': "Residential";
     readonly '2': "Multi-Residential";
@@ -197,4 +197,4 @@ export declare const propertyTypeNames: {
     readonly '7': "Recreational";
     readonly '8': "Residential Condos";
     readonly '9': "Other/Unique Properties";
-};
+}>;

@@ -1,4 +1,4 @@
-export declare const textureCodeNames: {
+export declare const textureCodeNames: Readonly<{
     readonly '0': "Non-farm land";
     readonly '1': "Sand";
     readonly '2': "Sandy loam";
@@ -9,8 +9,8 @@ export declare const textureCodeNames: {
     readonly '7': "Organic";
     readonly '8': "Water";
     readonly '9': "Rock";
-};
-export declare const soilClassPointsRemaining: {
+}>;
+export declare const soilClassPointsRemaining: Readonly<{
     readonly '1': {
         readonly max: 95;
         readonly min: 85;
@@ -39,4 +39,4 @@ export declare const soilClassPointsRemaining: {
         readonly max: 0;
         readonly min: 0;
     };
-};
+}>;

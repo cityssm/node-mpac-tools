@@ -1,4 +1,3 @@
-// eslint-disable-next-line @eslint-community/eslint-comments/disable-enable-pair
 /* eslint-disable @cspell/spellchecker, max-lines, sonarjs/no-duplicate-string */
 
 export const rollNumberMunicipalities = Object.freeze({
@@ -522,4 +521,4 @@ export const rollNumberMunicipalities = Object.freeze({
   '6097': 'Province Of Ontario',
   '6098': 'Province Of Ontario',
   '6099': 'Province Of Ontario'
-})
+} as const) satisfies Record<`${number}`, string>

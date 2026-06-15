@@ -1,6 +1,6 @@
 /* eslint-disable @cspell/spellchecker */
 
-export const characterOfConstructionDescriptions = {
+export const characterOfConstructionDescriptions = Object.freeze({
   A: {
     floor: 'Concrete or concrete covered steel deck, fireproofed',
     framing:
@@ -40,7 +40,7 @@ export const characterOfConstructionDescriptions = {
   'N/A': {
     description: 'Not applicable'
   }
-} as const satisfies Record<
+} as const) satisfies Record<
   string,
   {
     description?: string
@@ -51,7 +51,7 @@ export const characterOfConstructionDescriptions = {
   }
 >
 
-export const yearBuiltCodeNames = {
+export const yearBuiltCodeNames = Object.freeze({
   A: 'Addition',
   B: 'Both Estimated and Renovated',
   C: 'Both Estimated and Addition',
@@ -60,38 +60,38 @@ export const yearBuiltCodeNames = {
   M: 'Estimated, Renovated and Addition',
   N: 'None of the above codes are applicable',
   R: 'Renovated'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const conditionCodes = {
+export const conditionCodes = Object.freeze({
   A: { name: 'Average', ranking: 3 },
   E: { name: 'Excellent', ranking: 5 },
   F: { name: 'Fair', ranking: 2 },
   G: { name: 'Good', ranking: 4 },
   P: { name: 'Poor', ranking: 1 }
-} as const satisfies Record<string, { name: string; ranking: number }>
+} as const) satisfies Record<string, { name: string; ranking: number }>
 
-export const partStoreyCodeNames = {
+export const partStoreyCodeNames = Object.freeze({
   '1': '1/4 storey',
   '2': '1/2 storey',
   '3': '3/4 storey'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<`${number}`, string>
 
-export const splitCodeNames = {
+export const splitCodeNames = Object.freeze({
   B: 'Back or Front Split',
   N: 'No Split',
   S: 'Side Split',
   Y: 'Yes (unconventional split style)'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const basementFinishCodeNames = {
+export const basementFinishCodeNames = Object.freeze({
   '2': 'Recreation',
   '5': 'Finished',
   '8': 'Apartment',
   A: 'Apartment',
   R: 'Recreation'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const heatingTypeCodeNames = {
+export const heatingTypeCodeNames = Object.freeze({
   AS: 'Airtight Stove',
   EL: 'Electric Heating',
   FA: 'Forced Air',
@@ -104,9 +104,9 @@ export const heatingTypeCodeNames = {
   PL: 'Pipeless Hot Air',
   RD: 'Radiant Electric',
   ST: 'Conventional Heating Stove'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const garageTypeCodeNames = {
+export const garageTypeCodeNames = Object.freeze({
   A: 'Attached',
   B: 'Basement or Built-in',
   C: 'Carport',
@@ -116,19 +116,19 @@ export const garageTypeCodeNames = {
   N: 'No parking or No garage',
   O: 'Outdoor',
   P: 'Parking'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const structureCodeClasses = {
-  100: 'Secondary',
-  200: 'Farm',
-  300: 'Residential',
-  400: 'Commercial',
-  500: 'Industrial',
-  600: 'Institutional',
-  700: 'Special Purpose'
-} as const satisfies Record<string, string>
+export const structureCodeClasses = Object.freeze({
+  '100': 'Secondary',
+  '200': 'Farm',
+  '300': 'Residential',
+  '400': 'Commercial',
+  '500': 'Industrial',
+  '600': 'Institutional',
+  '700': 'Special Purpose'
+} as const) satisfies Record<`${number}`, string>
 
-export const structureCodeNames = {
+export const structureCodeNames = Object.freeze({
   '101': 'Detached Garage',
   '102': 'Shed',
   '103': 'Greenhouse',
@@ -351,4 +351,4 @@ export const structureCodeNames = {
   '780': 'Grandstand/Stadium',
   '790': 'Exhibit Building/Museum/Gallery',
   '799': 'Unspecified Special Purpose Structure'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<`${number}`, string>

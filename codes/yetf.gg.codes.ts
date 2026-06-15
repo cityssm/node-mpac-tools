@@ -1,4 +1,4 @@
-export const identifierNames = {
+export const identifierNames = Object.freeze({
   C: 'Conservation Authority',
   E: 'Education, religious or other exempt agencies',
   F: 'Female',
@@ -9,17 +9,17 @@ export const identifierNames = {
   M: 'Male',
   P: 'Provincial Government including agencies',
   X: 'Corporations, taxable agencies and other non-persons'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const occupancyStatusNames = {
+export const occupancyStatusNames = Object.freeze({
   B: 'Other residents such as boarders, lodgers, roomers, or children',
   O: 'Owner or Joint Owner',
   S: 'Spouse of owner or spouse of tenant',
   T: 'Tenant or Joint Tenant',
   V: 'Vacant unit'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const schoolSupportNames = {
+export const schoolSupportNames = Object.freeze({
   A: 'French-Public',
   B: 'Split',
   C: 'French-Separate',
@@ -27,16 +27,16 @@ export const schoolSupportNames = {
   N: 'No Support',
   P: 'English-Public',
   S: 'English-Separate'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const residencyCodeDescriptions = {
+export const residencyCodeDescriptions = Object.freeze({
   A: 'Individual lives in another apartment or house on the same property',
   M: 'Individual lives elsewhere in the same municipality',
   N: 'Individual lives in another municipality',
   U: 'Individual lives in this unit'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<string, string>
 
-export const monthOfBirthNames = {
+export const monthOfBirthNames = Object.freeze({
   '01': 'January',
   '02': 'February',
   '03': 'March',
@@ -49,4 +49,4 @@ export const monthOfBirthNames = {
   '10': 'October',
   '11': 'November',
   '12': 'December'
-} as const satisfies Record<string, string>
+} as const) satisfies Record<`${number}`, string>
